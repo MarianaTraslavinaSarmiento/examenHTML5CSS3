@@ -1,12 +1,12 @@
-
 @font-face {
-    font-family: Poppins-Regular;
-    src: url(/storage/fonts/Poppins-Regular.ttf);
+    font-family: Regular;
+    src: url(/storage/fonts/Poppins/Poppins-Regular.ttf);
 }
+
 
 :root{
 
     --color-black: #000;
     --color-yellow: #f5a512;
-
+    --color-white: #fff
 }
