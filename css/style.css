@@ -23,6 +23,7 @@ body{
     cursor: pointer;
 }
 
+
 html{
 
     scroll-behavior: smooth;
@@ -141,4 +142,48 @@ header ul li a{
     font-size: 3vw;
 }
 
+.popUp{
 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.popUp svg{
+    position: absolute;
+    top: 1.2vh;
+    right: 0.5vw
+}
+.navegador {
+    opacity: 0;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    top: 80px;
+    left: 0;
+    height: 0vh;
+    width: 40vw;
+    overflow: hidden;
+    background-color: #161616;
+    transition: all 0.3s ease; 
+    box-shadow: 0px 0px 10px black;
+    color: #fff
+}
+
+.checkbtn {
+    display: block;
+    position: absolute;
+    right: 20px;
+}
+
+#check:checked + .navegador {
+    opacity: 1;
+    padding-block: 20px;
+    height: 45vh;
+}
