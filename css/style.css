@@ -1,4 +1,4 @@
-@import url(/css/variables.css)
+@import url(variables.css)
 
 *{
     padding: 0;
@@ -9,15 +9,32 @@
 
 }
 
+body{
 
+    position: relative;
+    background-color: #161616;;
+}
+
+.popUp{
+
+    position: absolute;
+    right: 0.3vw;
+    top: 1vh;
+    cursor: pointer;
+}
+
+html{
+
+    scroll-behavior: smooth;
+}
 header{
 
-    width: 100%;
+    width: 95%;
     height: 10%;
-    border: 1px solid black;
     overflow-y: hidden;
     overflow-x: scroll;
     font-family: Regular;
+    background-color: #161616;
     
 
 }
@@ -34,7 +51,6 @@ header ul li{
 
     list-style: none;
     width: 100px;
-    border: 1px solid black;
     width: 70px;
     width: 100px;
 
@@ -49,6 +65,7 @@ header ul li a{
     align-items: center;
     outline: none;
     text-decoration: none;
+    color: #e0e0e0
 }
 
 .products{
@@ -67,8 +84,8 @@ header ul li a{
     grid-template: 1fr / 300px repeat(2, 1fr);
     height: 80vh;
     gap: 1vw;
-    padding-block: 2vh;
-    border: 1px solid black;  
+    padding-block: 2vh;  
+    background-color: #474747;
 }
 .products .product .gallery__Products{
 
@@ -81,7 +98,7 @@ header ul li a{
 
 .products .product .gallery__Products .photo{ 
 
-    border: 1px solid black;
+
     grid-template: repeat(3, 1fr) / 1fr;
     height: 18vh;
     background-color: #fff;
@@ -89,7 +106,7 @@ header ul li a{
 
 .products .product .main__Product{
 
-    border: 1px solid black;
+
     background-color: #fff;
     height: 100%;
 
@@ -97,7 +114,6 @@ header ul li a{
 
 .description__Product{
 
-    border: 1px solid black;
     font-size: 1.5vw;
     display: flex;
     flex-direction: column;
@@ -120,9 +136,9 @@ header ul li a{
 }
 
 
-
 .description__Product .cost h3{ 
 
     font-size: 3vw;
 }
+
 
